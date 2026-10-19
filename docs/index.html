@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PitchNeedleBar — Menu bar chromatic tuner for macOS</title>
+  <meta name="description" content="PitchNeedleBar is a free, open-source menu bar chromatic tuner for macOS. Real-time pitch detection, a cents needle gauge and a reference tone.">
+  <meta name="theme-color" content="#0b0b10">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PitchNeedleBar — Menu bar chromatic tuner for macOS">
+  <meta property="og:description" content="PitchNeedleBar is a free, open-source menu bar chromatic tuner for macOS. Real-time pitch detection, a cents needle gauge and a reference tone.">
+  <meta property="og:url" content="https://turhe123.github.io/pitch-needle-bar/">
+  <meta property="og:image" content="https://turhe123.github.io/pitch-needle-bar/screenshots/01-tuner.png">
+  <meta property="og:site_name" content="PitchNeedleBar">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PitchNeedleBar — Menu bar chromatic tuner for macOS">
+  <meta name="twitter:description" content="PitchNeedleBar is a free, open-source menu bar chromatic tuner for macOS. Real-time pitch detection, a cents needle gauge and a reference tone.">
+  <meta name="twitter:image" content="https://turhe123.github.io/pitch-needle-bar/screenshots/01-tuner.png">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>window.APP_CONFIG = { RELEASE_API_URL: "https://api.github.com/repos/turhe123/pitch-needle-bar/releases/latest", ASSET_NAME: "PitchNeedleBar-macOS.zip" };</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--violet"></div>
+    <div class="bg-glow bg-glow--cyan"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="PitchNeedleBar home">
+        <span class="logo-mark" aria-hidden="true"><img src="assets/icon.png" width="26" height="26" alt="" style="border-radius:7px"></span>
+        <span class="logo-text">PitchNeedleBar</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="https://github.com/turhe123/pitch-needle-bar" target="_blank" rel="noopener">GitHub</a></li>
+        <li class="nav-cta"><a class="btn btn--small btn--primary" href="https://github.com/turhe123/pitch-needle-bar/releases/latest/download/PitchNeedleBar-macOS.zip" data-download>Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <img class="app-icon-hero reveal" src="assets/icon.png" alt="PitchNeedleBar icon" width="84" height="84">
+        <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Open source · macOS 14+ · Universal binary · Audio</p>
+        <h1 class="hero-title reveal">A tuner that lives<br><span class="grad-text">in your menu bar.</span></h1>
+        <p class="hero-sub reveal">Click the tuning fork, play a note, and see its name, frequency and how many cents sharp or flat it is. Free, offline and built natively for macOS.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn--primary btn--large" href="https://github.com/turhe123/pitch-needle-bar/releases/latest/download/PitchNeedleBar-macOS.zip" data-download>
+            <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1Zm-7 13a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+            Download for macOS
+          </a>
+          <a class="btn btn--ghost btn--large" href="https://github.com/turhe123/pitch-needle-bar" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <p class="hero-hint reveal">Free &amp; MIT licensed · Apple Silicon &amp; Intel · <span data-version>Latest release</span></p>
+      </div>
+      <div class="hero-shot reveal">
+        <img src="screenshots/01-tuner.png" alt="PitchNeedleBar tuner popover with needle gauge" loading="eager">
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-head reveal">
+        <p class="section-kicker">Features</p>
+        <h2 class="section-title">Everything a tuner needs.</h2>
+        <p class="section-sub">One small window with the controls musicians actually use, and nothing that phones home.</p>
+      </div>
+      <div class="features">
+        <article class="card reveal">
+          <div class="card-icon card-icon--violet"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div>
+          <h3>Real-time pitch detection</h3>
+          <p>Uses the McLeod normalized square difference method on Accelerate with parabolic interpolation, covering roughly 30 Hz to 2 kHz. A noise gate and a five-reading median filter keep the needle steady.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--cyan"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8m-4-4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Needle gauge in cents</h3>
+          <p>A semicircular gauge spans -50 to +50 cents beside the note name, octave and frequency in Hz. The needle turns green within 5 cents, and so does the menu bar icon.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--grad"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h10m4 0h2M4 12h3m4 0h9M4 17h12m4 0h0"/><circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+          <h3>Reference pitch and transposition</h3>
+          <p>Set A4 anywhere from 415 to 466 Hz, with 440 as the default. Transpose for C, B-flat, E-flat, F and A instruments.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--violet"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9a4 4 0 0 1 0 6m2.5-9a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Reference tone generator</h3>
+          <p>Pick a note and play a sine wave to tune by ear. The mic pauses while the tone plays through built-in speakers to avoid feedback use headphones to tune along.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--cyan"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 4l14 7-6 2-2 6z"/></svg></div>
+          <h3>Hold and input selection</h3>
+          <p>Freeze the current reading with Hold, or choose which microphone to listen to. If the chosen device disappears, the app falls back to the system default and tells you.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--grad"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="8" width="16" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 11v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="5.5" y="10.5" width="7" height="3" rx=".8" fill="currentColor"/></svg></div>
+          <h3>Light on battery</h3>
+          <p>By default the app listens only while the tuner is open. Settings also cover launch at login and a noise-gate sensitivity slider.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="screenshots">
+      <div class="section-head reveal">
+        <p class="section-kicker">Screenshots</p>
+        <h2 class="section-title">See it in action.</h2>
+      </div>
+      <div class="gallery reveal">
+        <figure><img src="screenshots/01-tuner.png" alt="PitchNeedleBar tuner popover with needle gauge" loading="lazy"><figcaption>The menu bar tuner popover with its needle gauge from −50 to +50 cents, input picker, A4 reference pitch, transposition and reference-tone controls.</figcaption></figure>
+        <figure><img src="screenshots/02-settings.png" alt="PitchNeedleBar Settings window" loading="lazy"><figcaption>Settings for launch at login, listening only while the tuner is open, input device and noise-gate sensitivity.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="install">
+      <div class="section-head reveal">
+        <p class="section-kicker">Install</p>
+        <h2 class="section-title">Up and running in a minute.</h2>
+        <p class="section-sub">PitchNeedleBar is open source and not notarized with a paid Apple Developer ID, so macOS needs one extra step the first time.</p>
+      </div>
+      <ol class="steps reveal">
+        <li>Download <strong>PitchNeedleBar-macOS.zip</strong> and unzip it.</li>
+        <li>Move <strong>PitchNeedleBar.app</strong> to your <strong>Applications</strong> folder.</li>
+        <li>Clear the quarantine flag once, then right-click the app and choose <strong>Open</strong>:<pre>xattr -cr /Applications/PitchNeedleBar.app</pre></li>
+        <li>Allow Microphone access when macOS asks the first time you open the tuner you can change it later in System Settings Privacy Security Microphone.</li>
+      </ol>
+    </section>
+
+    <section class="section container" id="download">
+      <div class="download-card reveal">
+        <div class="download-glow" aria-hidden="true"></div>
+        <div class="download-copy">
+          <p class="section-kicker">Download</p>
+          <h2 class="section-title">Get PitchNeedleBar for macOS</h2>
+          <p class="section-sub">Free, forever. Built for macOS 14 Sonoma or newer, Apple Silicon and Intel.</p>
+          <div class="download-actions">
+            <a class="btn btn--primary btn--large" href="https://github.com/turhe123/pitch-needle-bar/releases/latest/download/PitchNeedleBar-macOS.zip" data-download>
+              <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1Zm-7 13a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+              Download for macOS
+            </a>
+            <a class="btn btn--ghost btn--large" href="https://github.com/turhe123/pitch-needle-bar/releases/latest" target="_blank" rel="noopener">All releases</a>
+          </div>
+          <p class="release-meta" data-release-meta>PitchNeedleBar-macOS.zip · GitHub Releases</p>
+          <p class="download-hint">Not notarized: on first launch right-click <strong>PitchNeedleBar.app → Open</strong>.</p>
+        </div>
+        <div class="download-aside">
+          <div class="app-tile" aria-hidden="true"><img src="assets/icon.png" width="72" height="72" alt="" style="border-radius:18px"></div>
+          <ul class="download-facts">
+            <li>macOS 14 Sonoma+</li>
+            <li>Universal (Apple Silicon + Intel)</li>
+            <li>MIT licensed · open source</li>
+            <li>No ads, no accounts, no telemetry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="faq">
+      <div class="section-head reveal">
+        <p class="section-kicker">FAQ</p>
+        <h2 class="section-title">Questions, answered.</h2>
+      </div>
+      <div class="faq reveal">
+        <details class="faq-item" open><summary>Is PitchNeedleBar really free and open source?</summary><div class="faq-body"><p>Yes. It is released under the MIT license, with no account, subscription or ads. The source is on GitHub, and an optional Support button opens a Ko-fi page in your browser if you want to chip in.</p></div></details>
+        <details class="faq-item"><summary>What permissions does it need?</summary><div class="faq-body"><p>Only Microphone access, so it can detect the pitch of what you play. Launch at login is optional and only used if you turn it on. It does not ask for Accessibility or Screen Recording, and it makes no network connections.</p></div></details>
+        <details class="faq-item"><summary>Where is my data stored?</summary><div class="faq-body"><p>Audio is analysed locally and is never recorded or sent anywhere. The only thing saved is your settings, such as reference pitch, transposition and chosen input device, in the app&#x27;s standard macOS preferences on your Mac.</p></div></details>
+        <details class="faq-item"><summary>Why isn&#x27;t the app notarized?</summary><div class="faq-body"><p>Notarization requires a paid Apple Developer account, and this is a free project. Right-click the app and choose Open once to launch it, or build it yourself from source with Xcode.</p></div></details>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="support">
+      <div class="support-card reveal">
+        <p class="section-kicker">Support ❤️</p>
+        <h2 class="section-title">Built by one person, given away for free.</h2>
+        <p>PitchNeedleBar is a free, open-source alternative to paid utilities. If it earns a spot on your Mac, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi btn--large" href="https://ko-fi.com/leodavidai" target="_blank" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Or Davidai Bachar · MIT License</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/turhe123/pitch-needle-bar" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://ko-fi.com/leodavidai" target="_blank" rel="noopener">Ko-fi</a></li>
+        <li><a href="https://github.com/turhe123/pitch-needle-bar/issues" target="_blank" rel="noopener">Report a bug</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

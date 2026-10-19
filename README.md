@@ -1,5 +1,7 @@
 # PitchNeedleBar
 
+**🌐 Website:** [turhe123.github.io/pitch-needle-bar](https://turhe123.github.io/pitch-needle-bar/)
+
 A menu bar chromatic tuner that listens through your mic and shows how sharp or flat each note is.
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
@@ -29,7 +31,13 @@ PitchNeedleBar is a free, open-source, 100% native, backend-free alternative to 
 
 ## Screenshots
 
-_Screenshots coming soon._
+<p align="center"><img src="docs/screenshots/01-tuner.png" alt="PitchNeedleBar tuner popover with needle gauge" width="720"></p>
+
+<p align="center"><em>The menu bar tuner popover with its needle gauge from −50 to +50 cents, input picker, A4 reference pitch, transposition and reference-tone controls.</em></p>
+
+<p align="center"><img src="docs/screenshots/02-settings.png" alt="PitchNeedleBar Settings window" width="560"></p>
+
+<p align="center"><em>Settings for launch at login, listening only while the tuner is open, input device and noise-gate sensitivity.</em></p>
 
 ## Install
 

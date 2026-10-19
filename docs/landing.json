@@ -1,0 +1,60 @@
+{
+  "seo_title": "Menu bar chromatic tuner for macOS",
+  "seo_description": "PitchNeedleBar is a free, open-source menu bar chromatic tuner for macOS. Real-time pitch detection, a cents needle gauge and a reference tone.",
+  "hero_title_line1": "A tuner that lives",
+  "hero_title_accent": "in your menu bar.",
+  "hero_sub": "Click the tuning fork, play a note, and see its name, frequency and how many cents sharp or flat it is. Free, offline and built natively for macOS.",
+  "features_title": "Everything a tuner needs.",
+  "features_sub": "One small window with the controls musicians actually use, and nothing that phones home.",
+  "features": [
+    {
+      "icon": "bolt",
+      "title": "Real-time pitch detection",
+      "desc": "Uses the McLeod normalized square difference method on Accelerate with parabolic interpolation, covering roughly 30 Hz to 2 kHz. A noise gate and a five-reading median filter keep the needle steady."
+    },
+    {
+      "icon": "display",
+      "title": "Needle gauge in cents",
+      "desc": "A semicircular gauge spans -50 to +50 cents beside the note name, octave and frequency in Hz. The needle turns green within 5 cents, and so does the menu bar icon."
+    },
+    {
+      "icon": "sliders",
+      "title": "Reference pitch and transposition",
+      "desc": "Set A4 anywhere from 415 to 466 Hz, with 440 as the default. Transpose for C, B-flat, E-flat, F and A instruments."
+    },
+    {
+      "icon": "speaker",
+      "title": "Reference tone generator",
+      "desc": "Pick a note and play a sine wave to tune by ear. The mic pauses while the tone plays through built-in speakers to avoid feedback; use headphones to tune along."
+    },
+    {
+      "icon": "cursor",
+      "title": "Hold and input selection",
+      "desc": "Freeze the current reading with Hold, or choose which microphone to listen to. If the chosen device disappears, the app falls back to the system default and tells you."
+    },
+    {
+      "icon": "battery",
+      "title": "Light on battery",
+      "desc": "By default the app listens only while the tuner is open. Settings also cover launch at login and a noise-gate sensitivity slider."
+    }
+  ],
+  "permissions_step": "Allow Microphone access when macOS asks the first time you open the tuner; you can change it later in System Settings > Privacy & Security > Microphone.",
+  "faq": [
+    {
+      "q": "Is PitchNeedleBar really free and open source?",
+      "a": "Yes. It is released under the MIT license, with no account, subscription or ads. The source is on GitHub, and an optional Support button opens a Ko-fi page in your browser if you want to chip in."
+    },
+    {
+      "q": "What permissions does it need?",
+      "a": "Only Microphone access, so it can detect the pitch of what you play. Launch at login is optional and only used if you turn it on. It does not ask for Accessibility or Screen Recording, and it makes no network connections."
+    },
+    {
+      "q": "Where is my data stored?",
+      "a": "Audio is analysed locally and is never recorded or sent anywhere. The only thing saved is your settings, such as reference pitch, transposition and chosen input device, in the app's standard macOS preferences on your Mac."
+    },
+    {
+      "q": "Why isn't the app notarized?",
+      "a": "Notarization requires a paid Apple Developer account, and this is a free project. Right-click the app and choose Open once to launch it, or build it yourself from source with Xcode."
+    }
+  ]
+}
